@@ -1,0 +1,69 @@
+.nav {
+  background-color: #f9f9f9;
+  padding: 20px 0px;
+  border-top: 1px solid rgba(143, 143, 143, 0.5);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.nav__link {
+  color: #2e363e;
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav__btn {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+.nav__notification {
+  position: absolute;
+  top: -12px;
+  right: -9px;
+  animation: notificationAnimation 4s ease-in-out infinite;
+}
+
+.nav__notification2 {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+}
+
+.nav__btn:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.nav__btn:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.nav__btn:nth-child(4) {
+  animation-delay: 0.8s;
+}
