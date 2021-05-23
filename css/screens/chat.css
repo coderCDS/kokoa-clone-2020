@@ -107,5 +107,58 @@
   flex-direction: row-reverse;
 }
 
-.reply:focus-within .reply__ {
+.typing-screen {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 10px;
+  background: white;
+}
+.typing-screen__plus {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.typing-screen__plus i {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.typing-screen__input {
+  width: 82%;
+  height: 35px;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.03);
+  padding-left: 10px;
+  border-radius: 20px;
+}
+.typing-screen__input input {
+  border: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0);
+}
+.typing-screen__interaction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 3px;
+}
+
+.typing-screen__emoji i {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 15px;
+}
+.typing-screen__enter {
+  border: 0;
+  background-color: var(--yellow);
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+}
+.typing-screen__enter i {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
 }
